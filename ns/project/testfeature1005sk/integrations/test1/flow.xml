@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="1.0" CLEANUP="false">
+<FLOW VERSION="3.1" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -9,7 +9,7 @@
   <COMMENT></COMMENT>
 </INVOKE>
 
-<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+<INVOKE NAME="Reference Data" SERVICE="project.testfeature1005sk.referencedata:refD">
   <COMMENT></COMMENT>
-</SEQUENCE>
+</INVOKE>
 </FLOW>

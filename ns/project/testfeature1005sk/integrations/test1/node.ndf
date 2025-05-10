@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">santhoshk</value>
-    <value name="lastModifiedDate">1746856140769</value>
+    <value name="lastModifiedDate">1746856647186</value>
     <value name="displayName">test1</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -63,10 +63,24 @@
           <value name="serviceName">pub.date:getCurrentDate</value>
           <value name="transformerSupport">true</value>
         </record>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Reference Data</value>
+          <value name="groupName">referenceData</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">refD</value>
+          <value name="serviceName">project.testfeature1005sk.referencedata:refD</value>
+          <double name="rank" type="Double">0.4</double>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>
