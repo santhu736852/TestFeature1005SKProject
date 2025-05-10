@@ -12,4 +12,8 @@
 <INVOKE NAME="Reference Data" SERVICE="project.testfeature1005sk.referencedata:refD">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+</SEQUENCE>
 </FLOW>
