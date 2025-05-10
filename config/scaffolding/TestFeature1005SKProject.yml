@@ -16,3 +16,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2055
+- serviceName: project.testfeature1005sk.referencedata:refD
+  packages:
+  - name: TestFeature1005SKProject
+    version: "1.0"
