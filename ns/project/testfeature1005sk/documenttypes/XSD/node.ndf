@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">project.testfeature1005sk.documenttypes:XSD</value>
+    <value name="node_pkg">TestFeature1005SKProject</value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <record name="revisionData" javaclass="com.wm.util.Values">
+        <value name="createdBy">santhoshk</value>
+        <value name="createdByUserId">22346d5b6c8e40a5896a4b648fb8feb7</value>
+        <number name="createdDate" type="Long">1746855870851</number>
+        <value name="lastModifiedBy">santhoshk</value>
+        <value name="lastModifiedByUserId">22346d5b6c8e40a5896a4b648fb8feb7</value>
+        <number name="lastModifiedDate" type="Long">1746855870853</number>
+      </record>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="schemaDomain">ad4400e0e0f74871ba3951cfb32524b0</value>
+    <value name="originURI">books.xsd</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">bks:books</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">false</value>
+        <value name="field_xmlns">urn:books</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">project.testfeature1005sk.documenttypes:docTypeRef_bks_BooksForm</value>
+      </record>
+    </array>
+    <value name="modifiable">false</value>
+    <value name="updateRSD">true</value>
+  </record>
+</Values>
