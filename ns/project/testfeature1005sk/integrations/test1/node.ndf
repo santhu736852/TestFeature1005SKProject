@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">santhoshk</value>
-    <value name="createdDate">1746856094987</value>
-    <value name="lastModifiedDate">1746856094987</value>
+    <value name="lastModifiedBy">santhoshk</value>
+    <value name="lastModifiedDate">1746856140769</value>
     <value name="displayName">test1</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -64,6 +63,10 @@
           <value name="serviceName">pub.date:getCurrentDate</value>
           <value name="transformerSupport">true</value>
         </record>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
       </record>
     </record>
   </record>
