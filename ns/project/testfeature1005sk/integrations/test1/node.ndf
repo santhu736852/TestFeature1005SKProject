@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">santhoshk</value>
-    <value name="lastModifiedDate">1746860670400</value>
+    <value name="lastModifiedDate">1746860760324</value>
     <value name="displayName">test1</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -105,6 +105,10 @@
         <value name="nodePathForDebug">5</value>
       </record>
       <record name="/6" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
+      </record>
+      <record name="/7" javaclass="com.wm.util.Values">
         <value name="itemType">ALL</value>
         <value name="name">NEW</value>
       </record>
