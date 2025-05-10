@@ -8,7 +8,11 @@ packages:
   gitUsername: santhu736852
   gitBranch: main
 services:
-- serviceName: project.testfeature1005sk.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:test
+- serviceName: project.testfeature1005sk.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:test1
+  packages:
+  - name: TestFeature1005SKProject
+    version: "1.0"
+- serviceName: project.testfeature1005sk.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:test2
   packages:
   - name: TestFeature1005SKProject
     version: "1.0"
@@ -24,84 +28,168 @@ services:
   packages:
   - name: TestFeature1005SKProject
     version: "1.0"
+- serviceName: project.testfeature1005sk.referencedata:refD2
+  packages:
+  - name: TestFeature1005SKProject
+    version: "1.0"
 configurationVariables:
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth.accessToken
-  : "{AES}ML0Q0aVy4miEMaboS+UO/A=="
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.providerUrl
-  : https://<instance>.salesforce.com
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth.consumerId
   : test
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.sockBuffSize
   : "8192"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.retryIfRequestSentOk
   : "true"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authorizationHeaderInTokenRefresh
-  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.retryIfRequestSentOk
+  : "true"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.expireTimeout
   : "1000"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.hostnameVerifier
   : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authorizationServerUrl
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.authorizationServerUrl
   : https://login.salesforce.com/services/oauth2/authorize
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.socketStaleCheck
-  : "true"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.refreshAccessToken
-  : "true"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.reuseAddr
   : "false"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.blockTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.scope
-  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authorizationHeaderPrefix
   : Bearer
   ? iscloudstreamsconnectorservice.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:test1.connectionAlias
   : project.testfeature1005sk.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:test
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.minimumPoolSize
   : "1"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.poolable
-  : "true"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.connectionEnabled
-  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.validateAfterInactivity
+  : "1000"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.keepAliveInterval
   : "300000"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.connectTimeout
   : "30000"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.startupBackoffSecs
   : "10"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.refreshToken
-  : "{AES}ML0Q0aVy4miEMaboS+UO/A=="
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.timeoutType
   : auto
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth.consumerId
+  : test2
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.providerUrl
+  : https://<instance>.salesforce.com
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth.accessToken
+  : "{AES}WsvvBQ3q9vLIEAC2qwVZuA=="
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth.accessToken
+  : "{AES}ML0Q0aVy4miEMaboS+UO/A=="
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.providerUrl
+  : https://<instance>.salesforce.com
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.refreshToken
+  : "{AES}WsvvBQ3q9vLIEAC2qwVZuA=="
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.poolable
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.refreshToken
+  : "{AES}ML0Q0aVy4miEMaboS+UO/A=="
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.accessTokenRefreshURL
   : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.authenticationServerUrl
   : https://login.salesforce.com/services/oauth2/token
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.oauth_v20.accessTokenRefreshURLRequest
   : URL Query String
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.retryCount
-  : "4"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.readTimeout
   : "30000"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.maximumPoolSize
   : "10"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cx.grant_type
-  : refresh_token
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.idleTimeout
-  : "-1"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.poolIncrementSize
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.poolIncrementSize
   : "1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.oauth_v20.scope
+  : offline_access api refresh_token
   ? iscloudstreamsconnectorservice.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:test1.virtualServiceName
   : WmCloudStreams.RestVS
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.validateAfterInactivity
+  ? iscloudstreamsconnectorservice.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:test2.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? iscloudstreamsconnectorservice.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:test2.connectionAlias
+  : project.testfeature1005sk.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:test2
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.expireTimeout
   : "1000"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.poolable
+  : "true"
   ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.enableSNI
   : "true"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.tcpNoDelay
-  : "false"
-  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test.cn.socketLinger
-  : "-1"
+  ? cloudstreamsconnection.project..testfeature1005sk..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:test2.minimumPoolSize
+  : "1"
